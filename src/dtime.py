@@ -79,12 +79,12 @@ def sample_system(sysc, Ts, method='matched'):
     elif method == 'tustin':
         sys = [sysc.num[0][0], sysc.den[0][0]]
         scipySysD = cont2discrete(sys, Ts, method='bilinear')
-        sysd = TransferFunction(scipySysD[0][0], scipySysD[1], dt)
+        sysd = TransferFunction(scipySysD[0][0], scipySysD[1], Ts)
 
     elif method == 'zoh':
         sys = [sysc.num[0][0], sysc.den[0][0]]
         scipySysD = cont2discrete(sys, Ts, method='zoh')
-        sysd = TransferFunction(scipySysD[0][0],scipySysD[1], dt)
+        sysd = TransferFunction(scipySysD[0][0],scipySysD[1], Ts)
 
     elif method == 'foh' or method == 'impulse':
         raise ValueError("Method not developed yet")
