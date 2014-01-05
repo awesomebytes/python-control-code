@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 32
+_build
+_templates
+_static
+*.pdf
+
+END

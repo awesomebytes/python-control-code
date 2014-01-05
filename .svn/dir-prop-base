@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 33
+MANIFEST*
+build
+dist
+__pycache__
+
+K 13
+svn:mergeinfo
+V 79
+/branches/add-frd:188-219
+/branches/mix-matrices-and-sys:249-273
+/trunk:275-286
+END
